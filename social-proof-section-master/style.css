@@ -19,50 +19,97 @@ body {
   font-size: 15px;
 }
 
+.top-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .info {
-  width: 300px;
+  width: 320px;
+  margin-left: 155px;
+  margin-top: 100px;
 }
 
 h1 {
   color: var(--VeryDarkMagenta);
+  font-size: 38px;
 }
 
 .info p {
   color: var(--DarkGrayishMagenta);
   width: 450px;
+  margin-top: 10px;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 100px;
+  width: 800px;
 }
 
 .ratings-box {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 2px solid red;
   background-color: var(--LightGrayishMagenta);
-  color: var(--VeryDarkMagenta);
   border-radius: 7px;
   width: 450px;
   height: 50px;
+  margin-right: 150px;
+}
+
+.ratings-box p {
+  color: var(--VeryDarkMagenta);
+  font-weight: 700;
+}
+
+.one {
+  margin-left: 90px;
+}
+.two {
+  margin-left: 140px;
+}
+.three {
+  margin-left: 190px;
+}
+
+.customer-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 75px;
+  margin-left: 85px;
+  margin-right: 85px;
 }
 
 .box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
   background-color: var(--VeryDarkMagenta);
-  width: 320px;
+  width: 400px;
+  height: 225px;
   color: var(--White);
+  line-height: 20px;
+  border-radius: 2%;
+  overflow: hidden;
 }
 
 .box-top {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-left: 30px;
+  margin-top: 50px;
+  line-height: 20px;
 }
 
 .box-top img {
   width: 40px;
-  height: 30px;
+  height: 35px;
+  margin-right: 30px;
 }
 
 h5 {
@@ -75,4 +122,16 @@ h6 {
 
 .picture {
   border-radius: 50%;
+}
+
+.box p {
+  padding: 30px;
+}
+
+.five {
+  margin-top: 30px;
+}
+
+.six {
+  margin-top: 60px;
 }
