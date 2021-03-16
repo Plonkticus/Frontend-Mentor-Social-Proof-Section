@@ -17,6 +17,9 @@
 body {
   font-family: Spartan;
   font-size: 15px;
+  background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: -5% 1%, right -5% top -590%;
 }
 
 .top-container {
@@ -134,4 +137,94 @@ h6 {
 
 .six {
   margin-top: 60px;
+}
+
+@media only screen and (max-width: 500px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-image: url(../images/bg-pattern-top-mobile.svg);
+    background-position: right 2% top -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+  }
+
+  .top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    margin: 100px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+    .info h1 {
+      text-align: center;
+    }
+
+    .info p {
+      text-align: center;
+      width: 340px;
+    }
+
+  .ratings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    margin-top: 50px;
+  }
+
+  .stars {
+    margin: 30px 0 10px 0;
+  }
+
+  .ratings-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    padding: 30px;
+    height: 80px;
+  }
+
+  .ratings-box p {
+    margin-bottom: 30px;
+  }
+
+  .one, .two, .three {
+    margin: 0 0 15px 0;
+  }
+
+  .customer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+    padding: 0;
+    max-width: 500px;
+  }
+
+  .box {
+    width: 100%;
+    margin: 0 50px 20px 50px;
+  }
 }
